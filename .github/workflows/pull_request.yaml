@@ -21,6 +21,7 @@ jobs:
           tag_name: ${{ github.event.pull_request.title }}
           release_name: ${{ github.event.pull_request.title }}
           body: ${{ github.event.pull_request.body }}
+          token: ${{ secrets.SAMPLE_TOKEN }}
           draft: false
           prerelease: false
           files: |
